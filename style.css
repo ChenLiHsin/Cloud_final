@@ -1,4 +1,35 @@
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
+th, td {
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.box {
+  border: 3px solid black;
+  table-layout:fixed;
+  width:100%;
+}
+
+.row{
+  overflow: hidden;
+}
+
+.row [class="col-"]{
+  margin-bottom: -9999px;
+  padding-bottom: 9999px;
+}
+
+#original {
+  width:360px;
+  height:360px;
+  visibility:hidden;
+}
+
+#original_result {
+  text-align: center;
+}

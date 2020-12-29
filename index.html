@@ -3,26 +3,77 @@
 
 <head>
     <title>Cloud Final Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
 <body>
-    <h1 align="center">Chest X-ray Disease Recognition Support System by Deep Learning Technique</h1>
-    <h2 align="center">Team member: 10627122陳俐欣 10627127周碩鴻 10627146陳浩瑋</h2>
-    <tb>
-        <th>Status</th>
-        <td>opencv.js & models is loading...</td>
-    </tb>
-    <h2 id='status'>opencv.js & models is loading...</h2>
-    <div>choose a file
-        <input type="file" id="fileInput" name="file" accept="image/*" disabled />
+    <h1 align="center">Chest X-ray Disease Recognition Support System</h1>
+    <h3 align="center">Team member: 10627122陳俐欣 10627127周碩鴻 10627146陳浩瑋</h3>
+    <br>
+    <h2>Introduction</h2>
+    <div class="row">
+        <div>
+            <table class="box">
+                <tr>
+                    <th>摘要</th>
+                    <th>流程圖</th>
+                </tr>
+                <tr>
+                    <th>
+                        <p align="left">隨著時代的演進，人們開始更加注重自身的身體健康。現在已有許多國家
+                            著手研究如何將深度學習應用在醫療診斷、利用深度學習模型預先辨識病徵種
+                            類，將結果提供給醫生作為參考，提高就醫的效率，加速診斷病患所需要的時 間、提早給予適當治療；而我們計劃使用深度學習模型在X光進行初步病徵辨
+                            識、針對肺炎的加強診斷、及未來潛在的病徵預測。
+                            　　本計劃的目標，第一階段是實作兩個用來辨識的深度學習模型，包含X光圖的初步辨識、及針對新冠肺炎的診斷辨識之模型，待第一階段的模型達到期望之精確度後，我們將進入第二階段，藉由初步辨識之模型多回合結構演算法，希望提高新冠肺炎辨識之準確度，第三階段會嘗試把此X光圖判讀系統移植在嵌入式裝置上，讓一切的診斷可以以更機動性的方式執行，接近病患的所在處。將上述三階段的結果整合，方便給予醫生判讀上的建議或參考，以減少病患在等待報告的時間，提高就醫時的品質與效率。
+                        </p>
+                    </th>
+                    <th>content</th>
+                </tr>
+            </table>
+        </div>
     </div>
+    <br>
+    <h2>Try it yourself</h2>
+    <div>
+        <table>
+            <tr>
+                <th style="height:10px;">Status</th>
+                <td>
+                    <h4 id='status'>opencv.js & models is loading...</h4>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table class="box">
+            <tr>
+                <th>
+                    <h3>Input: Choose a file <input type="file" id="fileInput" name="file" accept="image/*" disabled />
+                    </h3>
+                </th>
+                <th>
+                    <h3>Output: Result</h3>
+                </th>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <img id="original" />
+                </td>
+                <td>
+                    <div id="original_result"></div>
+                </td>
+            </tr>
+        </table>
 
-    <div><img id="original" style="width:360px;height:360px;visibility:hidden;" /></div>
-    <div id="original_result"></div>
+    </div>
+    <br>
+    <h2>History</h2>
+
+    <!--<div><img id="original" style="width:360px;height:360px;visibility:hidden;" /></div>-->
+    <!--<div id="original_result"></div>-->
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
     <script src="covid.js" type="text/javascript"></script>
     <script async src="opencv.js" onload="onOpenCvReady();" type="text/javascript"></script>
 </body>
-</head>
 
 </html>
