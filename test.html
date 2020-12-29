@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>tensorflow js load custom model</title>
+<body>
+    <div>Recognize objects in Cifar10 dataset</div>
+    <h2 id='status'>opencv.js & models is loading...</h2>
+    <div>choose a file
+        <input type="file" id="fileInput" name="file" accept="image/*" disabled/></div>
+    
+    <h4>Original</h4>
+    <div><img id="original"style="width:360px;height:360px;visibility:hidden;"/></div>
+    <div id="original_result"></div>
+    
+    <div>
+    <h4>Gaussian</h4>
+    <div><canvas id="gaussian"style="width:360px;height:360px;visibility;"/></canvas>
+    <div id="gaussian_result"></div>
+    
+    <h4>Gamma</h4>
+    <div><canvas id="gamma"style="width:360px;height:360px;visibility;"/></canvas>
+    <div id="gamma_result"></div>
+    
+    <h4>Sharpen</h4>
+    <div><canvas id="sharpen"style="width:360px;height:360px;visibility;"/></canvas>
+    <div id="sharpen_result"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
+    <script src="covid.js" type="text/javascript"></script>
+    <script async src="opencv.js" onload="onOpenCvReady();" type="text/javascript"></script>
+</body>
+</head>
+</html>
