@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>tensorflow js load custom model</title>
+    <title>Cloud Final Project</title>
+
 <body>
-    <div>Recognize objects in Cifar10 dataset</div>
+    <h1 align="center">Chest X-ray Disease Recognition Support System by Deep Learning Technique</h1>
+    <h2 align="center">Team member: 10627122陳俐欣 10627127周碩鴻 10627146陳浩瑋</h2>
+    <tb>
+        <th>Status</th>
+        <td>opencv.js & models is loading...</td>
+    </tb>
     <h2 id='status'>opencv.js & models is loading...</h2>
     <div>choose a file
-        <input type="file" id="fileInput" name="file" accept="image/*" disabled/></div>
-    
-    <div><img id="original"style="width:360px;height:360px;visibility:hidden;"/></div>
+        <input type="file" id="fileInput" name="file" accept="image/*" disabled />
+    </div>
+
+    <div><img id="original" style="width:360px;height:360px;visibility:hidden;" /></div>
     <div id="original_result"></div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
     <script src="covid.js" type="text/javascript"></script>
     <script async src="opencv.js" onload="onOpenCvReady();" type="text/javascript"></script>
 </body>
 </head>
+
 </html>
