@@ -1,6 +1,6 @@
 FROM nginx
 
-COPY test.html /usr/share/nginx/html
+COPY index.html /usr/share/nginx/html
 COPY covid.js /usr/share/nginx/html
 COPY opencv.js /usr/share/nginx/html
 COPY web_model/* /usr/share/nginx/html/web_model/
