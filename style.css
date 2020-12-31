@@ -121,3 +121,13 @@ body {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+.example {
+  width: 20%;
+  
+}
+
+.exampleLabel {
+  margin-left: 5%;
+  text-align: left;
+}
